@@ -1,89 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlueWave Bistro</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueWave Bistro | Seafood & Fine Dining</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header class="sticky-header">
-  <nav class="container nav-container">
-    <div class="logo">BlueWave</div>
-    <ul class="nav-links" id="nav-links">
+<!-- Header with Navigation -->
+<header>
+  <nav>
+    <div class="logo">
+      <i class="fas fa-fish"></i>
+      <h1>BlueWave Bistro</h1>
+    </div>
+    <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
       <li><a href="#menu">Menu</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
-    <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="burger">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 </header>
 
-<section class="hero" id="home">
-  <div class="hero-content container">
+<!-- Hero Section with Slideshow -->
+<section id="home" class="hero">
+  <div class="slideshow">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1554679665-f5537f187268?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');"></div>
+  </div>
+  <div class="hero-content">
     <h1>Welcome to BlueWave Bistro</h1>
-    <p>Fresh flavors, cozy vibes, unforgettable meals.</p>
-    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+    <p>Experience the freshest seafood and finest dining on the coast</p>
+    <div class="hero-buttons">
+      <a href="#menu" class="btn">View Menu</a>
+      <a href="#contact" class="btn btn-outline">Reserve a Table</a>
+    </div>
   </div>
 </section>
 
-<section id="about" class="section container">
-  <h2>About Us</h2>
-  <p class="section-text">
-    At BlueWave Bistro, we pride ourselves on serving fresh, delicious meals
-    inspired by the sea and coastal traditions. Join us for a culinary journey
-    in a welcoming atmosphere.
-  </p>
-</section>
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+  <div class="container">
+    <h2>Our Menu</h2>
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="seafood">Seafood</button>
+      <button class="filter-btn" data-category="salad">Salads</button>
+      <button class="filter-btn" data-category="pasta">Pasta</button>
+      <button class="filter-btn" data-category="dessert">Desserts</button>
+    </div>
 
-<section id="menu" class="section container">
-  <h2>Our Menu</h2>
-  <div class="menu-grid">
-    <article class="menu-item">
-      <img
-        src="Grilled-Salmon.jpg"
-        alt="Grilled Salmon"
-      />
-      <h3>Grilled Salmon</h3>
-      <p>Fresh Atlantic salmon grilled to perfection with lemon butter sauce.</p>
-    </article>
-    <article class="menu-item">
-      <img
-        src="summer-salad.jpg"
-        alt="Summer Salad"
-      />
-      <h3>Summer Salad</h3>
-      <p>A mix of fresh greens, berries, and nuts tossed in a citrus dressing.</p>
-    </article>
-    <article class="menu-item">
-      <img
-        src="perfect-pasta-primavera.jpg"
-        alt="Pasta Primavera"
-      />
-      <h3>Pasta Primavera</h3>
-      <p>Seasonal veggies and herbs mixed with pasta in a light garlic sauce.</p>
-    </article>
+    <div class="menu-items">
+      <!-- Seafood Items -->
+      <div class="menu-item seafood">
+        <div class="item-image" style="background-color: #4a8fe7;"></div>
+        <div class="item-details">
+          <h3>Grilled Salmon</h3>
+          <p>Atlantic salmon with lemon butter sauce and seasonal vegetables</p>
+          <span class="price">Kes 2950</span>
+        </div>
+      </div>
+
+      <div class="menu-item seafood">
+        <div class="item-image" style="background-color: #5da9e9;"></div>
+        <div class="item-details">
+          <h3>Lobster Thermidor</h3>
+          <p>Fresh Maine lobster with creamy mushroom sauce</p>
+          <span class="price">Kes 4500</span>
+        </div>
+      </div>
+
+      <div class="menu-item seafood">
+        <div class="item-image" style="background-color: #6bb2ea;"></div>
+        <div class="item-details">
+          <h3>Seafood Platter</h3>
+          <p>Assortment of shrimp, scallops, calamari, and fish</p>
+          <span class="price">Kes 3200</span>
+        </div>
+      </div>
+
+      <div class="menu-item seafood">
+        <div class="item-image" style="background-color: #7dbbec;"></div>
+        <div class="item-details">
+          <h3>Crab Cakes</h3>
+          <p>Maryland-style crab cakes with remoulade sauce</p>
+          <span class="price">Kes 2100</span>
+        </div>
+      </div>
+
+      <div class="menu-item seafood">
+        <div class="item-image" style="background-color: #8fc3ee;"></div>
+        <div class="item-details">
+          <h3>Shrimp Scampi</h3>
+          <p>Jumbo shrimp sautéed in garlic and white wine sauce</p>
+          <span class="price">Kes 2300</span>
+        </div>
+      </div>
+
+      <!-- Salad Items -->
+      <div class="menu-item salad">
+        <div class="item-image" style="background-color: #5cdb95;"></div>
+        <div class="item-details">
+          <h3>BlueWave Salad</h3>
+          <p>Mixed greens with grilled shrimp, avocado, and citrus dressing</p>
+          <span class="price">Kes 1800</span>
+        </div>
+      </div>
+
+      <div class="menu-item salad">
+        <div class="item-image" style="background-color: #4ad18c;"></div>
+        <div class="item-details">
+          <h3>Mediterranean Salad</h3>
+          <p>Greek-style salad with feta, olives, and grilled chicken</p>
+          <span class="price">Kes 1700</span>
+        </div>
+      </div>
+
+      <div class="menu-item salad">
+        <div class="item-image" style="background-color: #38c683;"></div>
+        <div class="item-details">
+          <h3>Caesar Salad</h3>
+          <p>Classic Caesar with homemade dressing and croutons</p>
+          <span class="price">Kes 1400</span>
+        </div>
+      </div>
+
+      <div class="menu-item salad">
+        <div class="item-image" style="background-color: #26bb7a;"></div>
+        <div class="item-details">
+          <h3>Quinoa Superfood</h3>
+          <p>Quinoa, kale, avocado, nuts, and berries</p>
+          <span class="price">Kes 1800</span>
+        </div>
+      </div>
+
+      <!-- Pasta Items -->
+      <div class="menu-item pasta">
+        <div class="item-image" style="background-color: #ff9e6d;"></div>
+        <div class="item-details">
+          <h3>Seafood Linguine</h3>
+          <p>Linguine with shrimp, scallops, and mussels in tomato sauce</p>
+          <span class="price">Kes 2300</span>
+        </div>
+      </div>
+
+      <div class="menu-item pasta">
+        <div class="item-image" style="background-color: #ff8d5c;"></div>
+        <div class="item-details">
+          <h3>Lobster Ravioli</h3>
+          <p>Homemade ravioli stuffed with lobster in cream sauce</p>
+          <span class="price">Kes 2800</span>
+        </div>
+      </div>
+
+      <div class="menu-item pasta">
+        <div class="item-image" style="background-color: #ff7d4b;"></div>
+        <div class="item-details">
+          <h3>Truffle Mushroom Pasta</h3>
+          <p>Fettuccine with wild mushrooms and truffle oil</p>
+          <span class="price">Kes 2200</span>
+        </div>
+      </div>
+
+      <div class="menu-item pasta">
+        <div class="item-image" style="background-color: #ff6c3a;"></div>
+        <div class="item-details">
+          <h3>Shrimp Alfredo</h3>
+          <p>Fettuccine with jumbo shrimp in creamy Alfredo sauce</p>
+          <span class="price">Kes 2500</span>
+        </div>
+      </div>
+
+      <!-- Dessert Items -->
+      <div class="menu-item dessert">
+        <div class="item-image" style="background-color: #f78fb3;"></div>
+        <div class="item-details">
+          <h3>Chocolate Lava Cake</h3>
+          <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+          <span class="price">Kes 1050</span>
+        </div>
+      </div>
+
+      <div class="menu-item dessert">
+        <div class="item-image" style="background-color: #f679a9;"></div>
+        <div class="item-details">
+          <h3>Key Lime Pie</h3>
+          <p>Classic Florida key lime pie with graham cracker crust</p>
+          <span class="price">Kes 950</span>
+        </div>
+      </div>
+
+      <div class="menu-item dessert">
+        <div class="item-image" style="background-color: #f5629f;"></div>
+        <div class="item-details">
+          <h3>Crème Brûlée</h3>
+          <p>Vanilla bean custard with caramelized sugar crust</p>
+          <span class="price">Kes 950</span>
+        </div>
+      </div>
+
+      <div class="menu-item dessert">
+        <div class="item-image" style="background-color: #f44b95;"></div>
+        <div class="item-details">
+          <h3>Berry Cheesecake</h3>
+          <p>New York-style cheesecake with mixed berry compote</p>
+          <span class="price">Kes 1200</span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="contact" class="section container">
-  <h2>Contact Us</h2>
-  <form id="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form id="reservation-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Visit Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Yet to Be revealed</p>
+        <p><i class="fas fa-phone"></i> +254 743-197191/ +254 745-113635</p>
+        <p><i class="fas fa-envelope"></i> info@bluewavebistro.com</p>
+
+        <h3>Opening Hours</h3>
+        <p>Monday - Thursday: 11am - 10pm</p>
+        <p>Friday - Saturday: 11am - 11pm</p>
+        <p>Sunday: 10am - 9pm</p>
+
+
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer>
-  <div class="container footer-content">
-    <p>© 2025 BlueWave Bistro. All rights reserved.</p>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-fish"></i>
+        <h3>BlueWave Bistro</h3>
+        <p>Fresh Seafood & Coastal Cuisine</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 BlueWave Bistro. All rights reserved.</p>
+    </div>
   </div>
 </footer>
 
