@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlueWave Bistro</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="sticky-header">
+  <nav class="container nav-container">
+    <div class="logo">BlueWave</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content container">
+    <h1>Welcome to BlueWave Bistro</h1>
+    <p>Fresh flavors, cozy vibes, unforgettable meals.</p>
+    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+  </div>
+</section>
+
+<section id="about" class="section container">
+  <h2>About Us</h2>
+  <p class="section-text">
+    At BlueWave Bistro, we pride ourselves on serving fresh, delicious meals
+    inspired by the sea and coastal traditions. Join us for a culinary journey
+    in a welcoming atmosphere.
+  </p>
+</section>
+
+<section id="menu" class="section container">
+  <h2>Our Menu</h2>
+  <div class="menu-grid">
+    <article class="menu-item">
+      <img
+        src="Grilled-Salmon.jpg"
+        alt="Grilled Salmon"
+      />
+      <h3>Grilled Salmon</h3>
+      <p>Fresh Atlantic salmon grilled to perfection with lemon butter sauce.</p>
+    </article>
+    <article class="menu-item">
+      <img
+        src="summer-salad.jpg"
+        alt="Summer Salad"
+      />
+      <h3>Summer Salad</h3>
+      <p>A mix of fresh greens, berries, and nuts tossed in a citrus dressing.</p>
+    </article>
+    <article class="menu-item">
+      <img
+        src="perfect-pasta-primavera.jpg"
+        alt="Pasta Primavera"
+      />
+      <h3>Pasta Primavera</h3>
+      <p>Seasonal veggies and herbs mixed with pasta in a light garlic sauce.</p>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <p>© 2025 BlueWave Bistro. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
